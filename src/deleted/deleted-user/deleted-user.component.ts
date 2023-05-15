@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { User } from 'src/user';
 import { UserService } from 'src/user.service';
-
+import { ACTIVATE } from 'src/config';
 @Component({
    selector: 'app-deleted-user',
    templateUrl: './deleted-user.component.html',
@@ -9,7 +9,7 @@ import { UserService } from 'src/user.service';
 })
 export class DeletedUserComponent {
    users: User[] = [];
-   btnName = "Activate";
+   btnName = ACTIVATE;
    constructor(private userService: UserService) {
 
    }
